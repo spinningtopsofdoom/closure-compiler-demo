@@ -1,0 +1,19 @@
+{
+  "name": "google-closure",
+  "version": "0.0.1",
+  "description": "Sample Google Closure Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "google-closure-compiler-js": "^20170910.0.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "todomvc-app-css": "^2.1.0",
+    "todomvc-common": "^1.0.4",
+    "typescript": "^2.5.3"
+  }
+}
