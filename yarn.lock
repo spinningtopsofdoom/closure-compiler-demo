@@ -2,6 +2,21 @@
 # yarn lockfile v1
 
 
+"@types/node@*":
+  version "8.0.32"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.32.tgz#869a716538b6eec65ab3893f183d557be3cda206"
+
+"@types/react-dom@^16.0.0":
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.0.tgz#7fac396cbd1cf44e112b957c8ef9c7ef401a90b3"
+  dependencies:
+    "@types/node" "*"
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^16.0.9":
+  version "16.0.9"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.9.tgz#2ad952abbb22617620927694f9a4bce292d7fb2b"
+
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"

@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/react": "^16.0.9",
+    "@types/react-dom": "^16.0.0",
     "google-closure-compiler-js": "^20170910.0.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
