@@ -1,0 +1,25 @@
+.content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  border-bottom: 0px !important;
+}
+
+.down_arrow {
+  margin-left: 8% !important;
+}
+
+.warning_image {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.bullets ul li {
+  text-align: left;
+}
+
+.smbullets ul li {
+  text-align: left;
+}
