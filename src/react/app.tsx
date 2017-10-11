@@ -4,7 +4,7 @@ import * as ReactDOM from 'react-dom';
 class TodoApp extends React.Component<{}, {}> {
   public render () {
     return (
-      <div>Hello Working React!</div>
+      <div>Hello World!</div>
     );
   }
 }
