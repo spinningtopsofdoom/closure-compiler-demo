@@ -7,7 +7,9 @@
     "build-ts": "./node_modules/typescript/bin/tsc -p src/react/ ",
     "watch-ts": "./node_modules/typescript/bin/tsc -w src/react/ ",
     "build-gcc": "java -jar node_modules/google-closure-compiler/compiler.jar --flagfile ./src/react/closure.conf",
-    "build-gcc-debug": "java -jar node_modules/google-closure-compiler/compiler.jar --flagfile ./src/react/closure.conf --debug --formatting PRETTY_PRINT"
+    "build-gcc-debug": "java -jar node_modules/google-closure-compiler/compiler.jar --flagfile ./src/react/closure.conf --debug --formatting PRETTY_PRINT",
+    "build-gcc-dev": "java -jar node_modules/google-closure-compiler/compiler.jar",
+    "build-gcc-dev-debug": "java -jar node_modules/google-closure-compiler/compiler.jar --debug --formatting PRETTY_PRINT"
   },
   "author": "",
   "license": "ISC",
