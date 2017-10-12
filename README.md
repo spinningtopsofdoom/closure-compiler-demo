@@ -12,6 +12,10 @@ All build steps use the [`yarn run`](https://yarnpkg.com/docs/cli/run/) command
 
 Run `yarn run build-ts` to compile the TypeScript. The compiled JavaScript is put into the `src/build-react` folder.
 
+# Running the server
+
+`yarn run server-start` Runs a static server at [localhost:8000](localhost:8000)
+
 # Compiling with Google Closure Compiler
 
 Google Closure Compiler has a way to pass in files containing parameters which are called **Flag Files**
@@ -46,4 +50,3 @@ TODO
 Copyright © 2017 Peter Schuck
 
 Distributed under the MIT License.
-
