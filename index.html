@@ -18,7 +18,7 @@
 		  url: "dist/main.js",
 		  dataType: "text",
 			success: function(data, textSuccess, jqXHR) {
-				$.globalEval(data);
+				document.write('<script "text\/javascript" src="dist\/main.js"><\/script>');
 				console.log("Loaded Main");
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
@@ -32,7 +32,7 @@
 		  url: "dist/common.js",
 		  dataType: "text",
 			success: function(data, textSuccess, jqXHR) {
-				$.globalEval(data);
+				document.write('<script "text\/javascript" src="dist\/common.js"><\/script>');
 				console.log("Loaded Common");
 				loadMain();
 			},
@@ -47,7 +47,7 @@
 		  url: "dist/bundle.js",
 		  dataType: "text",
 			success: function(data, textSuccess, jqXHR) {
-				$.globalEval(data);
+				document.write('<script "text\/javascript" src="dist\/bundle.js"><\/script>');
 				console.log("Loaded Bundle");
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
