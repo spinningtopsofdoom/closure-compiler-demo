@@ -13,12 +13,19 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript">
 (function($) {
+	var loadScript = function(location) {
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = location;
+		document.head.append(script);
+	}
+
   var loadMain = function() {
 		$.ajax({
 		  url: "dist/main.js",
 		  dataType: "text",
 			success: function(data, textSuccess, jqXHR) {
-				document.write('<script "text\/javascript" src="dist\/main.js"><\/script>');
+				loadScript("dist/main.js");
 				console.log("Loaded Main");
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
@@ -32,7 +39,7 @@
 		  url: "dist/common.js",
 		  dataType: "text",
 			success: function(data, textSuccess, jqXHR) {
-				document.write('<script "text\/javascript" src="dist\/common.js"><\/script>');
+				loadScript("dist/common.js");
 				console.log("Loaded Common");
 				loadMain();
 			},
@@ -47,7 +54,7 @@
 		  url: "dist/bundle.js",
 		  dataType: "text",
 			success: function(data, textSuccess, jqXHR) {
-				document.write('<script "text\/javascript" src="dist\/bundle.js"><\/script>');
+				loadScript("dist/bundle.js");
 				console.log("Loaded Bundle");
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
