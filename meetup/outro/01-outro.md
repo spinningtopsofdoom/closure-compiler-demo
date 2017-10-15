@@ -1,5 +1,5 @@
 
-# How Google Closure Complier solves the Problem of compiling JavaScript for delivery to the web
+# Quite a long journey
 ## Detailed look at how to use the Google Closure Complier
 
 !SLIDE
@@ -15,7 +15,7 @@
 
 !SLIDE
 
-# Fin
+# *Fin*
 
 !SLIDE
 
