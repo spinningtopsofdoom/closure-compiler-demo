@@ -73,6 +73,11 @@
 
 !SLIDE
 
+# All steps are located in the repo
+https://github.com/spinningtopsofdoom/closure-compiler-demo
+
+!SLIDE
+
 # 01 - Try the simplest thing possible
 
 	@@@bash
