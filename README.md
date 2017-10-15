@@ -20,7 +20,7 @@ Run `yarn run build-ts` to compile the TypeScript. The compiled JavaScript is pu
 
 Google Closure Compiler has a way to pass in files containing parameters which are called **Flag Files**
 
-All **Flag Files** are in [`src/closure`](./src/cloure). Each flag file is prefixed with the step number, like `02-<flag file descriptive name>`.
+All **Flag Files** are in [`src/closure`](./src/closure). Each flag file is prefixed with the step number, like `02-<flag file descriptive name>`.
 
 I've created two types of compilation for Google Closure Compiler, normal mode and debug mode. In debug mode the [name mangling](https://en.wikipedia.org/wiki/Name_mangling) is toned down and the compiled output is pretty printed. This makes the compiled JavaScript much easier to read when there is an error or bug in the JavaScript application.
 
