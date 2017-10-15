@@ -746,7 +746,7 @@
 
 !SLIDE
 
-# Al Done!
+# All Done!
 ## Well there is only more optimization
 
 !SLIDE
