@@ -613,7 +613,13 @@
 
 !SLIDE
 
-## When we check our source maps `node_modules` and our TypeScript files are under the directory where our complied JavaScript is located
+# Looking at our source maps
+
+![Bad source map paths](../../images/bad_source_map_paths.png)
+
+!SLIDE
+
+## `node_modules` and our TypeScript files are under the directory where our complied JavaScript is located
 
 !SLIDE
 
@@ -631,6 +637,12 @@
 
 # `source_map_location_mapping`
 ## Translate web path to file system path `<web path>|<file system path>`
+
+!SLIDE
+
+# Source Map paths are now correct
+
+![Source maps with correct paths](../../images/correct_source_map_paths.png)
 
 !SLIDE
 
@@ -708,7 +720,7 @@
 * `common.js` - 5.9K
 * `main.js` - 84K
 
-##  Wait `common.js` had React and ReactDOM along with all there dependencies!
+##  Wait `common.js` had React and ReactDOM along with all their dependencies!
 
 !SLIDE
 
@@ -751,7 +763,7 @@
 !SLIDE
 
 # All Done!
-## Well there is only more optimization
+## Well there is one more optimization
 
 !SLIDE
 
@@ -764,7 +776,7 @@
 
 # By default Google Closure injects polyfills for ES6 functionality
 * Previous `common.js` 5.9K
-* No polyfill `common.js` 842
+* No polyfill `common.js` 842 bytes
 
 !SLIDE
 
