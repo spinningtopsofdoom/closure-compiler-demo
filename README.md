@@ -43,7 +43,13 @@ These commands run the Google Closure Compiler showing the final
 
 # Running the Presentation
 
-TODO
+Install the showoff gem with
+* `bundle install`
+
+Run the showoff presentation
+* `showoff serve`
+
+Navigate to localhost:9090
 
 # License
 

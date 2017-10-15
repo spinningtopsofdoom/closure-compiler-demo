@@ -18,7 +18,6 @@
 # Outline
 * Problem Statement and Ideal Solution
 * Google Closure description and use
-* Sharp Edges and Alpha Features
 * Further Resources
 
 !SLIDE

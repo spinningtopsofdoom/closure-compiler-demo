@@ -4,6 +4,11 @@
 
 !SLIDE
 
+# Closure Handbook
+## https://github.com/roman01la/closure-compiler-handbook
+
+!SLIDE
+
 # Major Frameworks moving to Google Closure
 * Angular - http://g.co/ng/abc
 * React - https://github.com/facebook/react/issues/11092

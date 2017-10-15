@@ -1,6 +1,7 @@
 # Google Closure Compiler
-
 ## A Compiler by Google for taking JavaScript source and optimizing it for deployment to the web
+
+## A Java project Open Sourced on 05 Nov 2009
 
 !SLIDE
 
@@ -27,7 +28,7 @@
 
     @@@bash
     --js foo.js
-    --jsoutput_file bar.js
+    --js_output_file bar.js
 
 <br />
 
@@ -83,7 +84,7 @@
 
 !SLIDE
 
-## Google Closure Compiler was created around 2009 before Common JS and ECMAScript 6 modules
+## Google Closure Compiler was created before Common JS and ECMAScript 6 modules
 
 	@@@bash
 	src/build-react/app.js:2: ERROR - variable exports is undeclared
@@ -210,7 +211,7 @@
 
 !SLIDE
 
-# We'll need to do this for all NPM librarues :(
+# We'll need to do this for all NPM libraries :(
 ## There are tools to automate finding dependencies
 * madge: https://github.com/pahen/madge
 * module-deps: https://github.com/browserify/module-deps
@@ -218,6 +219,7 @@
 !SLIDE
 
 # Or Google Closure Compiler!
+## Will be explained later
 
 	@@@bash
 	-compilation_level=WHITESPACE_ONLY
@@ -373,20 +375,20 @@
 
 	@@@javascript
 	if (/** Defined by compiler */ process.env.NODE_ENV === 'production') {
-	  module.exports = require('./cjs/react.production.min.js'); //Production React
+	  module.exports = require('./cjs/react.production.min.js'); // Production React
 	} else {
-	  module.exports = require('./cjs/react.development.js');    //Development React
+	  module.exports = require('./cjs/react.development.js');    // Development React
 	}
 
 # We want this
 
 	@@@javascript
-	process.env.NODE_ENV = 'production'; //Set by compiler
+	process.env.NODE_ENV = 'production'; // Set by compiler
 
 	if (/** process.env.NODE_ENV */ 'production' === 'production') {
-	  module.exports = require('./cjs/react.production.min.js'); //Production React
+	  module.exports = require('./cjs/react.production.min.js'); // Production React
 	} else {
-	  module.exports = require('./cjs/react.development.js');    //Development React
+	  module.exports = require('./cjs/react.development.js');    // Development React
 	}
 
 !SLIDE
@@ -474,7 +476,7 @@
 	@@@javascript
 	goog.provide('process.env');
 
-## Entry point `goo:<Google Closure namespace>`
+## Entry point `goog:<Google Closure namespace>`
 
 	@@@bash
     --entry_point=goog:process.env
@@ -665,6 +667,8 @@
 	--module common:143
 	// ./distcommon.js
 
+<br />
+
 	@@@bash
 	--module_output_path_prefix ./dist/
 	--module common:143
@@ -704,7 +708,7 @@
 * `common.js` - 5.9K
 * `main.js` - 84K
 
-##  Wait `common.js` had React and ReactDOm along with all there dependencies!
+##  Wait `common.js` had React and ReactDOM along with all there dependencies!
 
 !SLIDE
 
@@ -736,8 +740,8 @@
 
 # `module_wrapper`
 ## Same as `output_wrapper` only for modules
-* `%s` - Modules JavaScript
-* `%basename%` - Modules name (e.g. common or main
+* `%s` - Module's JavaScript
+* `%basename%` - Module's name (e.g. common or main
 
 <br />
 
@@ -758,7 +762,7 @@
 
 !SLIDE
 
-# By default Google Closure injects ployfills for ES6 functionality
+# By default Google Closure injects polyfills for ES6 functionality
 * Previous `common.js` 5.9K
 * No polyfill `common.js` 842
 
