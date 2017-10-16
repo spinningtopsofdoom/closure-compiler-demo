@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-class TodoApp extends React.Component<{}, {}> {
+class HelloWorld extends React.Component<{}, {}> {
   public render () {
     return (
       <div>Hello World!</div>
@@ -11,7 +11,7 @@ class TodoApp extends React.Component<{}, {}> {
 
 function render() {
   ReactDOM.render(
-    <TodoApp/>,
+    <HelloWorld/>,
     document.getElementById('app')
   );
 }

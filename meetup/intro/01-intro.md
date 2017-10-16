@@ -16,7 +16,7 @@
 !SLIDE
 
 # Outline
-* Problem Statement and Ideal Solution
+* Problem Statement
 * Google Closure description and use
 * Further Resources
 
