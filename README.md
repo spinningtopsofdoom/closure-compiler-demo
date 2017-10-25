@@ -14,7 +14,7 @@ Run `yarn run build-ts` to compile the TypeScript. The compiled JavaScript is pu
 
 # Running the server
 
-`yarn run server-start` Runs a static server at [localhost:8000](localhost:8000)
+`yarn run server-start` Runs a static server at [localhost:8080](localhost:8080)
 
 # Compiling with Google Closure Compiler
 
